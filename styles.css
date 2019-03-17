@@ -1,49 +1,115 @@
-.boxWrap {
+/*--①レイアウトを構成する［初級］--*/
+.boxWrap1 {
   width: 600px;
   height: 600px;
   margin: 0 auto;
 }
-
 .boxblock1 {
   width: 200px;
+  height: 100%;
   float: left;
 }
-.boxblock2 {
-  width: 200px;
-  float: left;
-}
-.boxblock3 {
-  width: 200px;
-  float: left;
-}
-
 .box1 {
   background: red;
-  width: 200px;
+  width: 100%;
   height: 500px;
 }
 .box2 {
   background: yellow;
-  width: 200px;
+  width: 100%;
   height: 100px;
+}
+.boxblock2 {
+  width: 200px;
+  height: 100%;
+  float: left;
 }
 .box3 {
   background: blue;
-  width: 200px;
+  width: 100%;
   height: 200px;
 }
 .box4 {
   background: green;
-  width: 200px;
+  width: 100%;
   height: 400px;
+}
+.boxblock3 {
+  width: 200px;
+  height: 100%;
+  float: left;
 }
 .box5 {
   background: black;
-  width: 200px;
+  width: 100%;
   height: 300px;
 }
 .box6 {
   background: pink;
-  width: 200px;
+  width: 100%;
   height: 300px;
+}
+
+/*--①②レイアウトを構成する［中級］--*/
+.boxWrap2 {
+  width: 600px;
+  height: 900px;
+  margin: 0 auto;
+}
+.box7 {
+  width: 100%;
+  height: 100px;
+  background: blue;
+}
+.ul1_Block {
+  width: 100%;
+  height: 100px;
+}
+.ul1 {
+  margin: 0;
+  padding: 0;
+}
+.ul1 li {
+  list-style: none;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.ul1 li:nth-of-type(odd) {
+  background: gray;
+}
+.ul1 li:nth-of-type(even) {
+  background: pink;
+}
+.box8 {
+  width: 400px;
+  height: 600px;
+  background: skyblue;
+  float: left;
+}
+.sideWrap1 {
+  width: 200px;
+  height: 600px;
+  float: left;
+}
+.side1 {
+  width: 100%;
+  height: 200px;
+  background: yellow;
+}
+.side2 {
+  width: 100%;
+  height: 200px;
+  background: orange;
+}
+.side3 {
+  width: 100%;
+  height: 200px;
+  background: red;
+}
+.box9 {
+  width: 100%;
+  height: 100px;
+  background: lime;
+  clear:both;
 }
