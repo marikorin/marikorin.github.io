@@ -50,7 +50,7 @@
   height: 300px;
 }
 
-/*--①②レイアウトを構成する［中級］--*/
+/*--②レイアウトを構成する［中級］--*/
 .boxWrap2 {
   width: 600px;
   height: 900px;
@@ -112,4 +112,93 @@
   height: 100px;
   background: lime;
   clear:both;
+}
+
+/*--③レイアウトを構成する［上級］--*/
+.boxWrap3 {
+  width: 100%;
+  height: 900px;
+}
+.ul2_Block {
+  width: 100%;
+  height: 100px;
+}
+.ul2 {
+  margin: 0;
+  padding: 0;
+}
+.ul2 li {
+  width: 20%;
+  height: 100px;
+  list-style: none;
+  float: left;
+}
+.ul2 li:nth-of-type(odd) {
+  background: skyblue;
+}
+.ul2 li:nth-of-type(even) {
+  background: blue;
+}
+.box910Wrap {
+  width: 100%;
+  height: 300px;
+  background: gray;
+  position: relative;
+}
+.box910Wrap::after {
+  content: ""
+}
+.box9 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  float: left;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.box10 {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  float: left;
+  position: absolute;
+  top: 30%;
+  right: 20%;
+}
+.box1112Wrap {
+  width: 100%;
+  height: 300px;
+  background: pink;
+  position: relative;
+}
+.box1112Block {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.box1112Block::after {
+  content: ""
+}
+.box11 {
+  width: 100px;
+  height: 100%;
+  background: lime;
+  float: left;
+}
+.box12 {
+  width: 100px;
+  height: 100%;
+  background: green;
+  float: left;
+}
+.box13 {
+  width: 100%;
+  height: 200px;
+  background: black;
 }
