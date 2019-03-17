@@ -1,3 +1,49 @@
-h1 {
-  color: red;
+.boxWrap {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.boxblock1 {
+  width: 200px;
+  float: left;
+}
+.boxblock2 {
+  width: 200px;
+  float: left;
+}
+.boxblock3 {
+  width: 200px;
+  float: left;
+}
+
+.box1 {
+  background: red;
+  width: 200px;
+  height: 500px;
+}
+.box2 {
+  background: yellow;
+  width: 200px;
+  height: 100px;
+}
+.box3 {
+  background: blue;
+  width: 200px;
+  height: 200px;
+}
+.box4 {
+  background: green;
+  width: 200px;
+  height: 400px;
+}
+.box5 {
+  background: black;
+  width: 200px;
+  height: 300px;
+}
+.box6 {
+  background: pink;
+  width: 200px;
+  height: 300px;
 }
