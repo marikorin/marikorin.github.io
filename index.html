@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <!--①レイアウトを構成する［初級］start-->
   <section class="section1">
     <div>
       <h1>CSSの練習</h1>
@@ -31,6 +32,7 @@
     </div>
   </section>
 
+  <!--②レイアウトを構成する［中級］start-->
   <section class="section2">
     <div>
       <h2>②レイアウトを構成する［中級］</h2>
@@ -66,6 +68,7 @@
     </div>
   </section>
 
+ <!--③レイアウトを構成する［上級］start-->
   <section class="section3">
     <div>
       <h2>③レイアウトを構成する［上級］</h2>
@@ -110,6 +113,67 @@
       <div class="box14"></div>
     </div>
   </section>
-  
+
+  <!--Flexbox①start-->
+  <section class="section4">
+    <div>
+      <h2>Flexbox①</h2>
+      <h3>ポイント</h3>
+      <p>display: flex;</p>
+      <p>flex-wrap: wrap;</p>
+      <p>フレックスアイテムに対して、一行で要素を収めるか、
+        子要素の横幅がオーバーした時は複数行に折り返しを許可するかどうかを決めるプロパティです。
+        今回は折り返すようにしたいので、wrapという値にしています。</p>
+      <p>justify-content: center;</p>
+      <p>横方向の配置の仕方を指定します。
+        今回は中央にまとめて揃えたかったのでcenterという値にしています。</p>
+      <p>align-items: center;</p>
+      <p>align-itemsは縦方向の配置を指定します。
+        今回は上下の中央にフレックスアイテムを配置したいので、centerという値にしています。</p>
+      <p>-webkit-box-align: center;<br>
+        -ms-flex-align: center;</p>
+      <p>先頭に付ける-moz-や-webkit-など</p>
+      <p>CSS3で採用される予定の機能が各ブラウザで先行実装されていますが、それらの機能を動作させるには、 
+        現状ではプロパティや値の先頭に-moz-や-webkit-などのベンダープレフィックスを付ける必要があります。</p>
+      <p>ベンダープレフィックス（接頭辞）とは、ブラウザベンダーが独自の拡張機能を実装したり、草案段階の仕様を先行実装する場合に、 それが拡張機能であることを明示するために付ける識別子のことです。
+          将来的に仕様が変更されるリスクに備えて、独自拡張や先行実装のプロパティ名や値の先頭に付けることが推奨されています。 
+          ベンダープレフィックスでは、前後に「-」を付けたベンダー識別子（vendor identifier）でブラウザの種類を特定します。</p>
+    </div>
+    
+    <div class="container">
+      <p>a</p>
+      <p>b</p>
+      <p>c</p>
+      <p>d</p>
+      <p>e</p>
+      <p>f</p>
+      <p>g</p>
+      <p>h</p>
+    </div>
+  </section>
+
+  <!--Flexbox②start-->
+  <section class="section5">
+    <div>
+      <h2>Flexbox②</h2>
+      <h3>ポイント</h3>
+      <p>justify-content: flex-end;</p>
+      <p>フレックスアイテム全体を右寄せ</p>
+      <p>align-self</p>
+      <p>個別のフレックスアイテムに縦方向の位置指定をすることができます。
+        値にflex-endを指定することでフレックスアイテム全体を右寄せにしています。</p>
+      <p>flex-basis</p>
+      <p>個別に横幅を指定</p>
+      <p></p>
+    </div>
+
+    <div class="container2">
+      <p>a</p>
+      <p>b</p>
+      <p>c</p>
+    </div>
+
+  </section>
+
 </body>
 </html>
