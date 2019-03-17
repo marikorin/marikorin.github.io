@@ -12,7 +12,7 @@
       <h1>CSSの練習</h1>
       <h2>①レイアウトを構成する［初級］</h2>
       <h3>ポイント</h3>
-      
+      <p>flote:left;</p>
     </div>
 
     <div class="boxWrap1">
@@ -34,6 +34,11 @@
   <section class="section2">
     <div>
       <h2>②レイアウトを構成する［中級］</h2>
+      <h3>ポイント</h3>
+      <p>flote:left;</p>
+      <p>clear:both;</p>
+      <p>:nth-of-type(odd)</p>
+      <p>:nth-of-type(even)</p>
     </div>
 
     <div class="boxWrap2">
@@ -58,6 +63,51 @@
       </div>
 
       <div class="box9"></div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div>
+      <h2>③レイアウトを構成する［上級］</h2>
+      <h3>ポイント</h3>
+      <h4>相対配置 position:relative;</h4>
+      <p>windowの左上を基準(起点)にして、
+        上から~、左から~の位置に移動。
+        さらに、absolute を指定した要素は高さがなくなり、
+        浮いたような状態になるため、他のを無視して位置を詰めています。</p>
+      <h4>絶対配置 position:absolute;</h4>
+      <p>移動するときの基準が元いた位置。
+        positionを記述する前に配置されていた場所から移動する。
+        親要素を基準にするためには、
+        親要素に「position:relative;」を記述します。
+        こうすることで、子要素が親要素を基準に移動することができます。
+      </p>
+    </div>
+
+    <div class="boxWrap3">
+      <div class="ul2_Block">
+        <ul class="ul2">
+          <li>a</li>
+          <li>b</li>
+          <li>c</li>
+          <li>d</li>
+          <li>e</li>
+        </ul>
+      </div>
+
+      <div class="box910Wrap">
+        <div class="box9">f</div>
+        <div class="box10">g</div>
+      </div>
+
+      <div class="box1112Wrap">
+        <div class="box1112Block">
+          <div class="box11">h</div>
+          <div class="box12">i</div>   
+        </div>
+      </div>
+
+      <div class="box13"></div>
     </div>
   </section>
   
