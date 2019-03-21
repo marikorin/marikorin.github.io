@@ -172,8 +172,134 @@
       <p>b</p>
       <p>c</p>
     </div>
-
   </section>
+
+  <!--グリッドstart-->
+  <h2>grid練習</h2>
+  <p>グリッドアイテムになるのは直下の子要素だけ。</p>
+  <p>3*3</p>
+  <p>行のそれぞれの高さを指定　grid-template-rows: 80px 80px 80px;</p>
+  <p>列の幅　grid-template-columns: 80px 80px 80px;</p>
+  <p>行の高さと列の幅を一気に指定　grid-template: 80px 80px 80px/80px 80px 80px;</p>
+  <p>さらに短縮　grid-template: repeat(3, 80px)/repeat(3, 80px);</p>
+  <section>
+    <div class="container3">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+      <div class="item5">5</div>
+      <div class="item6">6</div>
+      <div class="item7">7</div>
+      <div class="item8">8</div>
+      <div class="item9">9</div>
+    </div>
+  </section>
+
+  <p>ブラウザの幅に応じて、並べるだけ並べたい場合　grid-template: repeat(3, 80px)/repeat(auto-fill, 80px);</p>
+  <section>
+    <div class="container4">
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+      <div class="item16">16</div>
+      <div class="item17">17</div>
+      <div class="item18">18</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+      <div class="item16">16</div>
+      <div class="item17">17</div>
+      <div class="item18">18</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+      <div class="item16">16</div>
+      <div class="item17">17</div>
+      <div class="item18">18</div>
+      <div class="item10">10</div>
+      <div class="item11">11</div>
+      <div class="item12">12</div>
+      <div class="item13">13</div>
+      <div class="item14">14</div>
+      <div class="item15">15</div>
+      <div class="item16">16</div>
+      <div class="item17">17</div>
+      <div class="item18">18</div>
+    </div>
+  </section>
+
+  <p>%で指定する場合</p>
+  <section>
+    <div class="container5">
+      <div class="item19">50%</div>
+      <div class="item20">20</div>
+      <div class="item21">21</div>
+      <div class="item22">50%</div>
+      <div class="item23">23</div>
+      <div class="item24">24</div>
+      <div class="item25">50%</div>
+      <div class="item26">26</div>
+      <div class="item27">27</div>
+    </div>
+  </section>
+
+  <p>余ったところを、1対2などで指定する場合</p>
+  <p>セルの間に余白がほしい場合</p>
+  <p>行の間の余白が10px　grid-row-gap: 10px;</p>
+  <p>列の間の余白が10px　grid-column-gap: 10px;</p>
+  <p>全て同じ　grid-gap: 10px 10px;</p>
+  <p>全て同じ　grid-gap: 10px;</p>
+  <section>
+    <div class="container6">
+      <div class="item30">100px</div>
+      <div class="item31">1</div>
+      <div class="item32">2</div>
+      <div class="item33">100px</div>
+      <div class="item34">1</div>
+      <div class="item35">2</div>
+      <div class="item36">100px</div>
+      <div class="item37">1</div>
+      <div class="item38">2</div>
+    </div>
+  </section>
+
+  <section>
+    <p>グリッドラインで要素を好きな位置に配置する。</p>
+    <p>グリッドラインには1番から番号が付いている。</p>
+    <p>移動させたいセルに対して</p>
+    <p>行の指定　ライン３番目から４番目の間に配置</p>
+    <p>grid-row-start: 3;</p>
+    <p>grid-row-end: 4;</p>  
+    <p>grid-row: 3/4;</p>
+    <p>３のラインから一つ分。　grid-row: 3/span 1;</p>
+    <p>spanは省略できる。　grid-row: 3;</p>
+    <p>列の指定　ライン2番目から4番目の間に配置</p>
+    <p>grid-column: 2/4;</p>
+    <p>grid-column: 2/ span 2;</p>
+    <p>一気に指定する場合</p>
+    <p>grid-area: 3/2/4/4;</p>
+      <div class="container7">
+        <div class="itemA">A</div>
+        <div class="itemB">B</div>
+        <div class="itemC">C</div>
+        <div class="itemD">D</div>
+        <div class="itemE">E</div>
+        <div class="itemF">F</div>
+        <div class="itemG">G</div>
+        <div class="itemH">H</div>
+        <div class="itemI">I</div>
+      </div>
+    </section>
 
 </body>
 </html>
